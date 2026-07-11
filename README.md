@@ -19,13 +19,3 @@ Should clean up any dynamically allocated memory it owns.
 Ejemplo: Si representa un Carro, podria incluir dos circulos (llantas), el cuerpo como triangulo y un poligono.
 Calling .area() on the carro should trigger a recursive cascade that calculates the area of everything inside it. 
 
-Layout:
-[ Forma ]  <--- (Abstract Base Class)
-          /   \
-         /     \______________________
-        /        \          \         \
-   [Circulo] [Triangulo] [Poligono] [FormaCompuesta]
-                                           |
-                                   (Holds a collection 
-                                    of Forma pointers)
-
